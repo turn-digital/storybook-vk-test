@@ -1,0 +1,17 @@
+@use "@carbon/styles/scss/config" as *;
+@use "@carbon/styles/scss/spacing" as *;
+@use "@carbon/styles/scss/type" as *;
+@use "@carbon/styles/scss/utilities/convert" as *;
+@use "@carbon/styles/scss/components/accordion";
+@use "@carbon/styles/scss/layout" as *;
+
+body {
+  font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 16px;
+  margin: 0px;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  color: rgb(51, 51, 51);
+  background: rgb(246, 249, 252);
+  overflow: hidden;
+}
