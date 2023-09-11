@@ -3,6 +3,8 @@
 @use "@carbon/styles/scss/type" as *;
 @use "@carbon/styles/scss/utilities/convert" as *;
 @use "@carbon/styles/scss/components/accordion";
+@use "@carbon/styles/scss/components/button";
+@use "@carbon/styles/scss/components/breadcrumb";
 @use "@carbon/styles/scss/layout" as *;
 
 body {
@@ -15,3 +17,65 @@ body {
   background: rgb(246, 249, 252);
   overflow: hidden;
 }
+.lineBreak {
+  position: relative; /* Required for positioning the pseudo-element */
+  width: 100%; /* Set the width of the container div */
+  margin: 0 auto; /* Center the div if needed */
+}
+
+.lineBreak::before {
+  content: ""; /* Empty content to create the line break */
+  display: block; /* Make it a block-level element */
+  width: 90%; /* Set the width of the line break to 80% of the container's width */
+  height: 0; /* Set the height to 0 to create a horizontal line */
+  border-top: 1px solid black; /* Add a border to create the line effect */
+  margin: 0 auto; /* Center the line break */
+  padding-bottom: 10px;
+  padding-top: 5px;
+}
+
+cds-header {
+  background-color: #012169;
+}
+
+cds-side-nav-items {
+  background-color: #f4f6f9;
+}
+
+cds-header-name::part(a) {
+  background-color: coral;
+}
+
+// body {
+//   cds-header {
+//     background-color: #012169;
+
+//     a.cds--header__menu-item {
+//       background-color: #012169;
+//     }
+//   }
+
+//   cds-header-name {
+//     a {
+//       color: white;
+//     }
+//   }
+
+//   cds-side-nav-items {
+//     background-color: #f4f6f9;
+//   }
+// }
+
+// body {
+//   header {
+//     background-color: #012169;
+
+//     /* Set the font color for all elements inside the header */
+//     color: white;
+
+//     /* Select all child elements and change their font color to white */
+//     * {
+//       color: white;
+//     }
+//   }
+// }
