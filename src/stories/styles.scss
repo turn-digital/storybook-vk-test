@@ -14,7 +14,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
   color: rgb(51, 51, 51);
-  background: rgb(246, 249, 252);
+  background-color: #fff;
   overflow: hidden;
 }
 .lineBreak {
@@ -42,40 +42,50 @@ cds-side-nav-items {
   background-color: #f4f6f9;
 }
 
-cds-header-name::part(a) {
-  background-color: coral;
+cds-header-name::part(link) {
+  color: white;
 }
 
-// body {
-//   cds-header {
-//     background-color: #012169;
+.pageContent {
+  margin-top: 80px;
+  margin-left: 340px;
+  margin-right: 340px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: flex-start; /* Align content to the top */
 
-//     a.cds--header__menu-item {
-//       background-color: #012169;
-//     }
-//   }
+  /* Reset margin when side nav is closed */
+  @media (max-width: 1055px) {
+    margin-left: 50px;
+    margin-right: 100px;
+  }
+}
 
-//   cds-header-name {
-//     a {
-//       color: white;
-//     }
-//   }
+.pageTile {
+  margin-left: 239px;
+  margin-top: 32px;
+  width: 100%;
+  background-color: #003fd1;
+  color: white;
+  cds-tile {
+    color: white;
+    background-color: #003fd1;
+  }
 
-//   cds-side-nav-items {
-//     background-color: #f4f6f9;
-//   }
-// }
+  @media (max-width: 1055px) {
+    margin-left: -20px;
+    margin-top: 30px;
+    margin-right: 100px;
+    background-color: #003fd1;
+    color: white;
+    cds-tile {
+      background-color: #003fd1;
+      color: white;
+    }
+  }
+}
 
-// body {
-//   header {
-//     background-color: #012169;
-
-//     /* Set the font color for all elements inside the header */
-//     color: white;
-
-//     /* Select all child elements and change their font color to white */
-//     * {
-//       color: white;
-//     }
-//   }
-// }
+cds-toast-notification {
+  margin-bottom: 5px;
+  width: 240px;
+}
