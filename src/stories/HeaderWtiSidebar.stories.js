@@ -6,8 +6,7 @@ import "@carbon/web-components/es/components/dropdown/index.js";
 import "@carbon/web-components/es/components/tile/index.js";
 import "@carbon/web-components/es/components/button/index.js";
 import "@carbon/web-components/es/components/notification/index.js";
-
-import Add16 from "@carbon/web-components/es/icons/add/16";
+import "@carbon/web-components/es/components/button/index.js";
 
 export default {
   title: "CustomSidebar",
@@ -88,6 +87,19 @@ const Template = (args) => (
           >
             Pieteikumu katalogs
           </cds-side-nav-menu-item>
+          <svg
+            focusable="false"
+            preserveAspectRatio="xMidYMid meet"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="currentColor"
+            aria-hidden="true"
+            width="20"
+            height="20"
+            viewBox="0 0 32 32"
+            slot="icon"
+          >
+            <path d="M29,27.5859l-7.5521-7.5521a11.0177,11.0177,0,1,0-1.4141,1.4141L27.5859,29ZM4,13a9,9,0,1,1,9,9A9.01,9.01,0,0,1,4,13Z"></path>
+          </svg>
           <cds-side-nav-menu-item>Parakstisana</cds-side-nav-menu-item>
           <cds-side-nav-menu-item>Pieteikumu saraksts</cds-side-nav-menu-item>
           <div class="lineBreak"></div>
