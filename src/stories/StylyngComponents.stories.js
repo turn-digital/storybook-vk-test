@@ -1,0 +1,62 @@
+// src/stories/CarbonButton.stories.js
+
+import React from "react";
+import "@carbon/web-components/es/components/button/index.js";
+import "@carbon/web-components/es/components/accordion/index.js";
+import "@carbon/web-components/es/components/number-input/index.js";
+
+import style from "./stylesStyles.scss";
+
+export default {
+  title: "Styles",
+  component: <cds-button href="https://www.ibm.com"> Button </cds-button>,
+  argTypes: {
+    // Define any custom props or event handlers here
+  },
+};
+
+export const Button = () => (
+  <>
+    <cds-button> Button </cds-button>
+  </>
+);
+
+export const Accordion = () => (
+  <>
+    <div className="accordionContainer">
+      <cds-accordion>
+        <cds-accordion-item title="Accordion title 1">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </cds-accordion-item>
+        <cds-accordion-item title="Accordion title 2 opened">
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex ea commodo consequat.
+          </p>
+        </cds-accordion-item>
+      </cds-accordion>
+    </div>
+  </>
+);
+
+export const NumberInput = () => (
+  <>
+    <div className="numberInputContainer">
+      <cds-number-input
+        className="numberInput"
+        value="0"
+        min="0"
+        max="100"
+        label="Label text"
+        helper-text="Optional helper text"
+      ></cds-number-input>
+    </div>
+  </>
+);

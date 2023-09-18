@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script
+      type="module"
+      src="https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/breadcrumb.min.js"
+    ></script>
+    <script
+      type="module"
+      src="https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/popover.rtl.min.js"
+    ></script>
+    <script
+      type="module"
+      src="https://1.www.s81c.com/common/carbon/web-components/tag/v2/latest/icon-button.min.js"
+    ></script>
+  </head>
+  <body>
+    <cds-breadcrumb>
+      <cds-breadcrumb-item>
+        <cds-breadcrumb-link href="/#">Breadcrumb 1</cds-breadcrumb-link>
+      </cds-breadcrumb-item>
+      <cds-breadcrumb-item>
+        <cds-breadcrumb-link href="#">Breadcrumb 2</cds-breadcrumb-link>
+      </cds-breadcrumb-item>
+      <cds-breadcrumb-item>
+        <cds-breadcrumb-link href="#">Breadcrumb 3</cds-breadcrumb-link>
+      </cds-breadcrumb-item>
+      <cds-breadcrumb-item>
+        <cds-breadcrumb-link>Breadcrumb 4</cds-breadcrumb-link>
+      </cds-breadcrumb-item>
+    </cds-breadcrumb>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <p>and here is the not working example when we want to se overflow menu</p>
+
+    <cds-breadcrumb>
+      <cds-breadcrumb-item>
+        <cds-breadcrumb-link href="/#">Breadcrumb 1</cds-breadcrumb-link>
+      </cds-breadcrumb-item>
+      <cds-breadcrumb-item>
+        <cds-breadcrumb-link href="/#">Breadcrumb 2</cds-breadcrumb-link>
+      </cds-breadcrumb-item>
+      <cds-breadcrumb-item>
+        <cds-breadcrumb-overflow-menu>
+          <cds-overflow-menu-body>
+            <cds-overflow-menu-item>Breadcrumb 3</cds-overflow-menu-item>
+            <cds-overflow-menu-item>Breadcrumb 4</cds-overflow-menu-item>
+          </cds-overflow-menu-body>
+        </cds-breadcrumb-overflow-menu>
+      </cds-breadcrumb-item>
+      <cds-breadcrumb-item>
+        <cds-breadcrumb-link href="/#">Breadcrumb 5</cds-breadcrumb-link>
+      </cds-breadcrumb-item>
+      <cds-breadcrumb-item>
+        <cds-breadcrumb-link>Breadcrumb 6</cds-breadcrumb-link>
+      </cds-breadcrumb-item>
+    </cds-breadcrumb>
+
+    <br />
+    <br />
+    <br />
+    <br />
+
+    <p>Also here is example of not working popover that was copied from docs</p>
+    <cds-popover open>
+      <div class="playground-trigger">${Checkbox16()}</div>
+      <cds-popover-content>
+        <div class="p-3">
+          <p class="popover-title">Available storage</p>
+          <p class="popover-details">
+            This server has 150 GB of block storage remaining.
+          </p>
+        </div>
+      </cds-popover-content>
+    </cds-popover>
+
+    <br />
+    <br />
+    <br />
+    <br />
+    <p>Here is the exaple of not working iconed button and icon as well</p>
+
+    <p>
+      function App() { return ( html` ${Add16({ class: 'test-class',
+      'aria-label': 'add', 'aria-describedby': 'id-title-1', children:
+      svg`<title id="id-title-1">add</title>`, })}` );
+    </p>
+  </body>
+</html>

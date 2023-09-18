@@ -1,0 +1,34 @@
+.customButton::part(button) {
+  background-color: red !important;
+  color: white !important;
+}
+
+cds-accordion {
+  border-radius: 4px;
+  margin: 20px;
+  padding: 10px;
+}
+
+/* Style the accordion items */
+cds-accordion-item {
+  padding: 10px;
+}
+
+/* Style the accordion item title */
+cds-accordion-item::part(title) {
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 10px;
+  cursor: pointer;
+}
+
+/* Style the active (expanded) accordion item title */
+cds-accordion-item[expanded]::part(title) {
+  background-color: #007acc;
+  color: #fff;
+}
+
+/* Style the accordion item content */
+cds-accordion-item::part(content) {
+  padding: 10px;
+}

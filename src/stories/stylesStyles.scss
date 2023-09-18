@@ -1,0 +1,25 @@
+@use "@carbon/styles/scss/config" as *;
+@use "@carbon/styles/scss/spacing" as *;
+@use "@carbon/styles/scss/type" as *;
+@use "@carbon/styles/scss/utilities/convert" as *;
+@use "@carbon/styles/scss/components/accordion";
+@use "@carbon/styles/scss/components/button";
+@use "@carbon/styles/scss/components/breadcrumb";
+@use "@carbon/styles/scss/layout" as *;
+
+:root {
+  --cds-button-primary: purple;
+}
+
+.accordionContainer {
+  width: 50%;
+  background-color: lightgreen;
+}
+
+.numberInputContainer {
+  width: 40%;
+}
+
+.numberInput {
+  height: 100px;
+}
