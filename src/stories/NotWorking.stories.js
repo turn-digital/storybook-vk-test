@@ -60,6 +60,12 @@ export const BreadcrumbNotWorking = () => (
       expected, we dont have working overflow menu.
     </p>
     <p>
+      <a href="https://github.com/carbon-design-system/carbon-for-ibm-dotcom/blob/feat/cwc-v2/packages/carbon-web-components/src/components/breadcrumb/breadcrumb-overflow-menu.ts">
+        Here
+      </a>{" "}
+      is a link to functionality that was writen and not provided by defaul
+    </p>
+    <p>
       Here is the link:{" "}
       <a href="https://carbon-design-system.github.io/carbon-for-ibm-dotcom/v2/carbon-web-components-v2/?path=/story/components-breadcrumb--breadcrumb-with-overflow-menu">
         Code example that don't work as exmpected
